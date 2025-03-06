@@ -8,7 +8,7 @@ from book import Book
 def book_dao():
     book_dao=BookDAO(":memory:")
  
-    book_dao.clear_table()
+    book_dao.create_table()
    
     # Skapar några exempelböcker som ska läggas till i databasen för teständamål
     book1 = Book("Carolinas liv", "Deckare", "Carolina")
